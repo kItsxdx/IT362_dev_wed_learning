@@ -1,9 +1,9 @@
 const Transation=()=>{
     return(
         <ul>
-            <ui>ค่านั้น</ui>
-            <ui>ค่านี้</ui>
-            <ui>ค่านู้น</ui>
+            <li>ค่านั้น</li>
+            <li>ค่านี้</li>
+            <li>ค่านู้น</li>
         </ul>
     )
 }
