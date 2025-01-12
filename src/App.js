@@ -1,4 +1,4 @@
-
+import Transation from './component/Transation';
 import './App.css';
 
 function App() {
@@ -6,11 +6,7 @@ function App() {
     <div className="App">
           <h1>แอปบัญชีรสยรับรสยจ่าย</h1>
           <h2>วันที่ 10 มหราคม</h2>
-          <ul>
-            <ui>ค่าเดินทาง</ui>
-            <ui>ค่าเดินทาง</ui>
-            <ui>ค่าเดินทาง</ui>
-          </ul>
+          <Transation/>
           </div>
       
 );
