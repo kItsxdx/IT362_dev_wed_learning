@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-          <h1>แอปบัญชีรสยรับรสยจ่าย</h1>
+          <h1>แอปบัญชีรายรับรายจ่าย</h1>
           <h2>วันที่ 10 มหราคม</h2>
           <Transation/>
           </div>
