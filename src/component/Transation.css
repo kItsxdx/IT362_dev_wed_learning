@@ -4,7 +4,7 @@
     margin-bottom: 40px;
     }
     .item-list li{
-    background: white;
+    background: rgb(40, 4, 241);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
     padding: 15px;
     color: #333;
@@ -13,3 +13,8 @@
     margin-top: 10px;
     position: relative;
     }
+
+.item{
+    padding: auto;
+
+}

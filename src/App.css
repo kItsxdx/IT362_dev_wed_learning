@@ -1,6 +1,9 @@
 .App {
   text-align: center; 
   font-size: 35px;
+  padding: auto;
+  border-radius:10px;
+
 }
 
 
@@ -19,7 +22,7 @@ body{
   margin: 0;
   }
   .container{
-  margin:30px auto;
+  margin:30px;
   width: 350px;
   }
 
@@ -28,4 +31,14 @@ url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300
 *{
 box-sizing:border-box;
 font-family: "Prompt", serif;
+}
+
+.boxinput{
+  position:relative;
+  padding: 5rem;
+  background: #cac4c4;
+  border-radius:10px;
+  gap: 1rem;  
+  
+
 }

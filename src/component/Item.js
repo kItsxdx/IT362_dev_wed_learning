@@ -1,7 +1,14 @@
 const Item =(props)=>{
-    const {Title,Price}=props;
-    return(
-    <li className="item">{props.Title}<span>{props.Price}</span></li>
-    );
+    const {title,amount}=props;
+
+
+    const itemList = document.getElementById("itemList");
+    const listItem = document.createElement("li");
+    if (amount > 0 ){
+        listitem
     }
+    // return(
+    // <li class="items">{props.title}<span>{props.amount}</span>บาท</li>
+    // );
+    // }
 export default Item;
