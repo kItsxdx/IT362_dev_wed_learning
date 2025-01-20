@@ -1,18 +1,21 @@
-import './Transation.css';
 import Item from './Item';
 import { v4 as uuidv4 } from 'uuid';
 
-const Transation = (props) => {
+
+const Transaction = (props) => {
     const { items } = props;
     return (
-        <ul className="item-list">
-            {
-                items.map((e) => (
-                    <Item {...e} key={uuidv4()} />
-                ))
-            }
+        <ul style={{ listStyle: "none", padding: 0 }}>
+            {items.map((e) => (<Item {...e} key={uuidv4()}
+            />))}
         </ul>
     );
 }
 
-export default Transation;
+
+
+
+
+  
+  export default Transaction;
+  
