@@ -1,6 +1,6 @@
 body{
   font-family: Arial,  sans-serif;
-  background-color: #f9f9f9;
+  background-color: #e0dbdb;
   margin: 1rem;
   padding: 1px;
   }
@@ -11,9 +11,9 @@ body{
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #e4c2c2;
   border-radius:8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(177, 7, 7, 0.1);
 }
 
 
@@ -30,12 +30,4 @@ box-sizing:border-box;
 font-family: "Prompt", serif;
 }
 
-.boxinput{
-  position:relative;
-  padding: 5rem;
-  background: #cac4c4;
-  border-radius:10px;
-  gap: 1rem;  
-  
 
-}

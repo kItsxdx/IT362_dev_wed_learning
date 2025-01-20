@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import '../App.css';
 
 const FromComponane =(props)=>{
 
@@ -55,7 +56,8 @@ const FromComponane =(props)=>{
                         
                         </div>
                 <div>
-                    <button type="submit"className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-3 my-1">เพื่มข้อมูล</button>
+                    <button type="submit"
+                    className="bg-white hover:bg-green-100 text-green-800 font-semibold py-2 px-4 border border-green-400 rounded shadow mt-3 my-1">เพื่มข้อมูล</button>
                 </div>
                 </div>
                 

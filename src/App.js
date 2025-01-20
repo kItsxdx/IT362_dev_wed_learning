@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-4xl font-bold underline bg-white px-8 pt-6 pb-8 mb-4">
+      <h1 className="text-4xl font-bold underline bg-white px-8 pt-6 pb-8 mb-4 text-center">
         แอพบัญชีรายรับ-รายจ่าย
       </h1>
       <h2 className='text-xl text-center underline'>วันที่ 10 มกราคม 2568</h2>
