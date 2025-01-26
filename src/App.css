@@ -31,3 +31,19 @@ font-family: "Prompt", serif;
 }
 
 
+
+.btn{
+  flex:1;
+  
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 8px;
+    margin:10px;
+    background-color: rgb(19, 23, 23);
+    color: aliceblue;
+    &:hover{
+      background-color: aliceblue;
+      color: black;
+    }
+}
