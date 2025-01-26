@@ -63,8 +63,8 @@ function App() {
             <Router>
               <div>
                 <ul>
-                  <li><Link to ="/">ข้อมูลบัญชี</Link></li>
-                  <li><Link to ="/insert">บันทึกข้อมูล</Link></li>
+                  <li className='btnA'><Link to ="/">ข้อมูลบัญชี</Link></li>
+                  <li className='btnB'><Link to ="/insert">บันทึกข้อมูล</Link></li>
                 </ul>
                 <Routes>
                   <Route path='/' element={<ReportComponent/>}/>

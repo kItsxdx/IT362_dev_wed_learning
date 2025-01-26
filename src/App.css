@@ -32,12 +32,27 @@ font-family: "Prompt", serif;
 
 
 
-.btn{
+.btnA{
   flex:1;
   
     text-align: center;
-    padding: 5px;
-    font-size: 30px;
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin:10px;
+    background-color: rgb(19, 23, 23);
+    color: aliceblue;
+    &:hover{
+      background-color: aliceblue;
+      color: black;
+    }
+}
+.btnB{
+  flex:1;
+  
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
     border-radius: 8px;
     margin:10px;
     background-color: rgb(19, 23, 23);
