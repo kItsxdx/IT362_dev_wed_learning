@@ -1,5 +1,6 @@
 const Item =(props)=>{
-    const {title,amount}=props;
+
+
 
     return(
         <li
@@ -12,25 +13,30 @@ const Item =(props)=>{
             boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)", // เงา
             borderRight: `5px solid ${props.amount > 0 ? "blue" : "red"}`, // สีแถบซ้าย
           }}>
+
+
             
             <div
-    style={{
-      padding: "10px",
-      display: "flex",
-      justifyContent: "space-between",
-      width: "100%",
-    }}
-  >
-    <span style={{ fontSize: "16px", fontWeight: "bold" }}>{props.title}</span>
-    <span
-      style={{
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: props.amount > 0 ? "blue" : "red",
-      }}
-    >
+                style={{
+                  padding: "10px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "100%",
+                }}>
+  
+                <span style={{ fontSize: "16px", fontWeight: "bold" }}>{props.title}</span>
+                <span
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    color: props.amount > 0 ? "blue" : "red",
+                  }}>
+    
+      
+      
       {props.amount > 0 ? `+${props.amount}` : props.amount}
     </span>
+    <p>บาท</p>
   </div>
             
             
