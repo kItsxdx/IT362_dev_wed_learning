@@ -1,12 +1,14 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect} from "react";
 import { v4 as uuidv4 } from "uuid";
 import '../App.css';
+
 
 const FromComponane =(props)=>{
 
     const [title,setTitle]=useState('')
     const [amount,setAmount ]=useState()
     const [formValid,setFormValid]=useState(false)
+
 
     
     const inputTitle =(event)=>{
@@ -68,8 +70,9 @@ const FromComponane =(props)=>{
                     disabled={!formValid} >เพื่มข้อมูล</button>
                 </div>            
                 </div>
-                
             </form>
+            
+
         </div>
     )
 }
