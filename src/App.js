@@ -2,6 +2,8 @@ import Transaction from './component/Transation'
 import FromComponane from './component/FromComponent';
 import './App.css';
 import { useState } from "react";
+import DataContext from './data/DataContext';
+import ReportComponent from './component/ReportComponent';
 
 function App() {
   const initData = [
@@ -20,14 +22,24 @@ function App() {
   
 
   return (
-    <div className="App">
-      <h1 className="text-4xl font-bold underline bg-white px-8 pt-6 pb-8 mb-4 text-center">
-        แอพบัญชีรายรับ-รายจ่าย
-      </h1>
-      <h2 className='text-xl text-center underline'>วันที่ 10 มกราคม 2568</h2>
-      <FromComponane onAddItem={onAddNewItem} />
-      <Transaction items={items} /> 
-    </div>
+    
+      <DataContext.Provider value={
+        {
+          income:50000,
+          expense:-8000
+        }
+      }>
+        <div className="App">
+          <h1 className="text-4xl font-bold underline bg-white px-8 pt-6 pb-8 mb-4 text-center">
+            แอพบัญชีรายรับ-รายจ่าย
+          </h1>
+          <h2 className='text-xl text-center underline'>
+            วันที่ 10 มกราคม 2568</h2>
+            <ReportComponent />
+          <FromComponane onAddItem={onAddNewItem} />
+          <Transaction items={items} />
+        </div>
+      </DataContext.Provider>
   );
 }
 
