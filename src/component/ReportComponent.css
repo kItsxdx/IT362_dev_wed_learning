@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    border: 1px solid #ddd;
+    
+}
+
+
+
+.box{
+    flex:1;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 8px;
+    margin:10px;
+}
+.green {
+    background-color: #dfffdc;
+    color: red;
+}
+
+.red {
+    background-color: red;
+    color: #ddd;
+
+}
+
+.box span{
+    display: block;
+
+}
