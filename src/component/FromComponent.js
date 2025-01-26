@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import '../App.css';
 
@@ -6,6 +6,8 @@ const FromComponane =(props)=>{
 
     const [title,setTitle]=useState('')
     const [amount,setAmount ]=useState()
+    const [formValid,setFormValid]=useState(false)
+
     
     const inputTitle =(event)=>{
         setTitle(event.target.value)
@@ -27,6 +29,11 @@ const FromComponane =(props)=>{
         setAmount("");
         
         }
+
+        useEffect(()=>{
+            const checkData=title.trim().length>0 && amount!==0
+            setFormValid(checkData)
+            },[title,amount])
     return(
         <div>
              <form onSubmit={saveItem} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -57,8 +64,9 @@ const FromComponane =(props)=>{
                         </div>
                 <div>
                     <button type="submit"
-                    className="bg-white hover:bg-green-100 text-green-800 font-semibold py-2 px-4 border border-green-400 rounded shadow mt-3 my-1">เพื่มข้อมูล</button>
-                </div>
+                    className="bg-white hover:bg-green-100 text-green-800 font-semibold py-2 px-4 border border-green-400 rounded shadow mt-3 my-1"
+                    disabled={!formValid} >เพื่มข้อมูล</button>
+                </div>            
                 </div>
                 
             </form>
