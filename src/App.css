@@ -62,3 +62,11 @@ font-family: "Prompt", serif;
       color: black;
     }
 }
+
+.inputAdd{
+  color: black;
+  margin: 15px;
+  border-radius: 8rem;
+  padding: 5px;
+
+}

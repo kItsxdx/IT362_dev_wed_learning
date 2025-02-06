@@ -33,17 +33,17 @@ const AddUser=()=>{
             console.log(error)
             })
             }
-            return(<div className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            return(<div className="block mb-2 text-sm font-medium text-gray-900 ">
     <h3 className='text-4xl font-bold underline bg-white px-8 pt-6 pb-8 mb-4 text-center'>Add New User</h3>
     <form onSubmit={submitForm}>
-    <div >
-            <label >Name</label>
+    <div className='inputAdd'>
+            <label >Name:</label>
         <input type="text" id="name" name="name" required onChange={inputUser}/>
             
-            <label >Your email</label>
+            <label >Your email:</label>
         <input type="email" id="email" name="email" required onChange={inputUser}/>
             
-            <label for="address">Your address</label>
+            <label for="address">Your address:</label>
         <input type="text" id="address" name="address" required onChange={inputUser} />
     </div>
     <button 
